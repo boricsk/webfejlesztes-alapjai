@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <title>Feedback form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="feedback.js"></script> <!-- a weboldalhoz készített js linkelése-->
+</head>
+
+<body>
+  <h1>Send us your feedback</h1>
+  <div class="container">
+    <p>Your opinion is important to us, please leave a few words below.</p>
+    <input id="visitnum">
+    <div class="form-item">
+      <label>E-mail</label><br>
+      <input id="email" type="email">
+    </div>
+    <div class="form-item">
+      <label>Feedback</label><br>
+      <textarea id="feedback" rows="10"></textarea>
+    </div>
+    <a href="https://i.gifer.com/Wn2j.gif" target="_blank">Privacy
+      notice</a><br>
+    <button id="submit">Send</button><br> <!--Az id az eseménykezelő beregisztrálásához is kell, nemcsak a CSS-hez-->
+    <div id="image-container">
+      <img src="https://i.gifer.com/Wn2j.gif">
+    </div>
+    <label>Kérek egy számot</label><br>
+    <input id="magicnumber" type="number">
+    <ul id="magiclist"></ul>
+  </div>
+</body>
+
+</html>

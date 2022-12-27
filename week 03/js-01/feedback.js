@@ -39,3 +39,17 @@ document.addEventListener('DOMContentLoaded',() => {
 
 //Email mentése a böngészőbe, ide a storage API kell. A DevTools-ban az Application Local Storage-ben lehet ellenőrizni a mentést.
 //Innen nem tudnak kiolvasni más appok által lementett adatot.
+
+let a = [1,2,3];
+let n = 5;
+const foo = (n) => {
+    n = n*2
+};
+foo(n);
+console.log(n);
+
+let v1 = 5;
+let v2 = '5';
+
+console.log(v1 == v2);
+console.log(v1 === v2);
