@@ -1,0 +1,19 @@
+li:nth-child(even) {
+    background-color: green;
+  }
+  li:nth-child(odd) {
+    background-color: red;
+  }
+  li:first-child
+  {
+    border-top: 2px solid white;
+  }
+  li:last-child{
+    border-bottom: 2px solid white;
+  }
+  li {
+    border: 1px solid white;
+  }
+  ul {
+    border: 2px solid black;
+  }

@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Palacinta recept</title>
+    </head>
+    <body>
+        <h1>Palacsinta recept</h1>
+        <img src="https://www.venusz.hu/assets/recipe_cards/145.jpg"><br>
+        <h2>Hozzávalók</h2>
+        <ul><!--számozatlan lista-->
+            <li>7.5 dl. szénsavas víz</li>
+            <li>7.5 dl. növényi tej</li>
+            <li>1 darab tojás</li>
+            <li>65dkg. liszt</li>
+        </ul>
+        <h2>Elkészítése:</h2>
+        <ol><!--számozott lista-->
+            <li>Összekervejük a hozzávalókat.</li>
+            <li>Süssük ki a palacsintánkat</li>
+        </ol>
+        <h2>Értékelés</h2>
+        <div>
+            <label>Mennyire izlett a végezedmény? </label>
+            <!--A radio button-okat össze kell kötni, mert ha nincs összekötve többet is ki lehet választani, ami nem jó.
+            ezt a name attr-el hehet  megtenni.-->
+            <label>1</label>
+            <input type="radio" name="taste">
+            <label>2</label>
+            <input type="radio" name="taste">
+            <label>3</label>
+            <input type="radio" name="taste">
+            <label>4</label>
+            <input type="radio" name="taste">
+            <label>5</label>
+            <input type="radio" name="taste">
+        </div>
+        <div>
+            <label>Mennyire volt könnyű követni a receptet?</label>
+            <select>
+                <option>Nagyon</option>
+                <option>Közepes</option>
+                <option>Nehéz</option>
+            </select>
+        </div>
+        <button>Értékelés küldés</button>
+        <h2>Eredmények</h2>
+        <table><!--Alapért szerint a böngésző nem rajozl határvonalakat, ezt CSS-ből lehet megtenni.-->
+            <tr><!--fejrész-->
+                <th>Pontszám</th>
+                <th>Szavazatok száma</th>
+            </tr>
+            <tr><!--Adatok-->
+                <td>1</td>
+                <td>0 szavazat</td>
+            </tr>
+            <tr><!--Adatok-->
+                <td>2</td>
+                <td>2 szavazat</td>
+            </tr>
+            <tr><!--Adatok-->
+                <td>3</td>
+                <td>17 szavazat</td>
+            </tr>
+            <tr><!--Adatok-->
+                <td>4</td>
+                <td>325 szavazat</td>
+            </tr>
+            <tr><!--Adatok-->
+                <td>5</td>
+                <td>9870 szavazat</td>
+            </tr>
+
+        </table>
+    </body>
+</html>

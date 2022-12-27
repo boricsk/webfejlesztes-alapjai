@@ -1,0 +1,46 @@
+<!-- a html közti rész a kontent rész, html elemek egymásba ágyazhatóak A html két fő részből áll, 
+  az egyik az elemek, a másik az attribútumok, ezek a html elemekhez adnak extra infokat, tulajdonágokat.
+  Bizonyos html elemek mindig új sorban jelennek meg, ezek a block (h1 div p) tipusú html elemek.
+  mások pedig sorfolytonosan jelennek meg (inline elemek) A kodban lévő sortördelésnek nincs hatása a renderelt kimenetre
+  Elrendezések beállítása html-ben
+  Ha külön div-be rakjuk azokat, amelyeket 1 sorba szeretnénk megjeleniteni, mert tudjuk, h a div block tipusu vagy <br>
+  -->
+<html>
+  <head>
+    <!-- html, head body kötelező. A headbe került infók nem jelennek meg a webappon. 
+        A title-ben metainformációk, css , js importok lehetnek-->
+    <title>Feedback form</title>
+  </head>
+  
+  <!-- a body rész tartalma meg fog jelenni a böngészőben. -->
+  <body>
+    <h1>Send us your feedback</h1>
+
+    <div>
+        <!-- a div ált. konténer elem, html elemek csoportosítására van. a p elem (paragraph) összetartozó szöveget jelöl.
+        input elem a felhasználói bevitelre van. Már a nyitótag hatására rendereli az oldalon ennek az az oka,
+        mert van néhány olyan html elem aminek a tartalmi része tipikusan üres. Ezért a böngésző megengedi h acsak a nyitóteget
+        irjuk be. Önlezáró a html elem, ha <input /> -->
+        <p>Your opinion is important tu us, please leave few words below.</p>
+
+        <div>
+          <label>E-mail:</label><br>
+          <input type="email"><!-- Itt megadtunk egy tipus attribútumot, ez azért jó, mert olyan beviteli mezőt fog megjeleniteni amiben van kukac. 
+            validálást nem fog végezni. bool tipus esetén (dissabled) nem kell az értéket kiirni, ha beirjuk akkor automatikusan 
+            true-nak veszi a böngésző.-->
+        </div>
+
+        <div>
+          <label>Feedback</label><br>
+          <textarea rows="10"></textarea> <!-- többsoros szöveg bevitelre alk. az input csak egy sor bevitelére alk.-->
+        </div>
+
+        <a href="" target ="_blank">Privacy policy</a><br> <!-- a targettel az szabályozható, hogy új ablakban nyíljon-e meg a link (_blank)-->
+
+        <button>Send</button><br>
+
+        <div></div><img src="https://media.giphy.com/media/uWlpPGquhGZNFzY90z/giphy.gif"></div>
+
+    </div>
+  </body>
+</html>

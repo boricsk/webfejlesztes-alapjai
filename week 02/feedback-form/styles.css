@@ -1,0 +1,103 @@
+:root {
+    /*változó deklarálás */
+    --font-family: Arial, Helvetica, sans-serif;
+    --primary-font-color: #4a4a4a;
+    --primary-color: #5d9930;
+    --border-color: #747474;
+    --input-base-height: 24px;
+  }
+  body {
+    font-family: var(--font-family);
+    margin: 16px;
+    color: var(--primary-font-color);
+  }
+  
+  h1 {
+    margin-bottom: 0px;
+  }
+  
+  .container {
+    padding: 16px, 0, 16px, 0; /*konténeren belül 16px eltolás alul és felül sorrend fönt jobb also bal*/
+    /*padding: 16px 0; Ekvivalens a fölsővel*/
+  }
+  
+  /*form elemek megformázása classt-rakjunk ezekre is*/
+  .form-item {
+    margin-bottom: 24px;
+  }
+  
+  label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /*két form elem kinézete*/
+  input {
+    height: var(--input-base-height);
+  }
+  
+  textarea {
+    font-family: var(--font-family);
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    line-height: var(--input-base-height);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+  }
+  
+  /*ha belekattintunk a mezőkbe pszeudoclass definiálása*/
+  input:focus,
+  textarea:focus {
+    outline: none; /*belekattintáskor ne legyen kijelölve*/
+    box-shadow: 0 0 0 1px green;
+    background-color: rgba(200, 200, 200, 0.2);
+  }
+  
+  /*ha elég nagy felbontás van ne nyúljun végig az input elemek*/
+  
+  @media screen and (min-width: 992px) {
+    input,
+    textarea {
+      width: 450px;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: #506ad4;
+    font-size: 80%;
+    display: inline-block;
+  }
+  
+  button {
+    background: none;
+    border: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px, 16px;
+    border-radius: 6px;
+    margin: 8px 0;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    /*ha rajta van a mutató*/
+    color: var(--primary-font-color);
+    background-color: rgba(93, 153, 48, 0.4);
+  }
+  
+  button:focus {
+    /*megnyomás*/
+    outline: none;
+    border: 2px solid green;
+  }
+  /*kép középre helyezése*/
+  
+  #image-container {
+    display: flex;
+    justify-content: center;
+  }
